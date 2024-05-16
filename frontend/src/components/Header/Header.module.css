@@ -1,0 +1,157 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: rgb(253, 253, 253);
+}
+.hhh {
+  background: rgb(160, 160, 229);
+}
+.menuHidden {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+}
+.username {
+  font-size: 22px;
+  font-weight: bold;
+}
+.auth {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  
+}
+.links {
+  width: 450px;
+ justify-content: space-between;
+ display: flex; 
+}
+
+.auth a {
+  margin-left: 15px;
+  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.reg,
+.in {
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.reg:hover,
+.in:hover {
+  color: rgb(160, 160, 229);
+  background: #fff;
+}
+.home {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+.home::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0; /* Начальная ширина линии */
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease; /* Плавное изменение ширины */
+}
+
+.home:hover::after {
+  width: 100%; /* Меняем ширину при наведении */
+}
+
+.logout {
+  margin-left: 15px;
+  padding: 10px 20px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.logout:hover {
+  color: rgb(160, 160, 229);
+  background: #ee5e5e;
+  border: 2px solid #ee5e5e;
+}
+
+/* /////////////////////////////// */
+
+.menu {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.burger {
+  cursor: pointer;
+  display: none;
+}
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+@media (max-width: 391px) {
+  .burger {
+    display: block;
+  }
+  .menuHidden {
+    display: none;
+  }
+  .menu{
+    flex-direction: column;
+  }
+  .main__header{
+    display: flex;
+    width: 315px;
+    justify-content: space-between;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+  }
+  .home{
+    margin: 10px 0px;
+
+  }
+  .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .auth {
+    margin-left: 0px;
+    
+  }
+  .reg,.in {
+    display: none;
+    
+  }
+  
+}

@@ -1,0 +1,53 @@
+.intro{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 35dvh;
+}
+.tit{
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.intro a{
+    text-decoration: none;
+    background-color: rgba(136, 119, 136, 0);
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 22px;
+    border-radius: 10px;
+    transition: all .2s linear;
+    color: #000;
+}
+.intro a:hover{
+    color: #fff;
+    background: rgb(160, 160, 229);
+    border: 1px solid rgb(160, 160, 229);
+}
+.link{
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+
+}
+
+
+@media (max-width: 391px) {
+.intro{
+    padding-top: 7vh;
+}
+.tit{
+    font-size: 28px;
+    font-weight: bold;
+    width: 330px;
+    margin: 0 auto;
+}
+.link{
+    flex-direction: column;
+}
+.link a{
+    margin: 10px;
+}
+  }

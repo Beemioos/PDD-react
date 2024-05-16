@@ -1,0 +1,96 @@
+.main__stat {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.tit__stat {
+  font-size: 30px;
+  margin: 20px 0px;
+  font-weight: bold;
+}
+.statement {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1200px;
+  border: 3px solid #8f8f8f;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.statement div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.statement label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.statement div input {
+  border: 1px solid #000;
+  padding: 10px 20px;
+  font-size: 18px;
+  width: 200px;
+}
+.statement div textarea {
+  border: 1px solid #848484;
+  padding: 10px 20px;
+  font-size: 18px;
+  width: 100%-100px;
+  height: 180px;
+  resize: none;
+}
+form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+  font-size: 20px;
+  transition: all 0.2s linear;
+}
+/* NewStatement.module.css */
+
+/* Стили для уведомления об ошибке */
+.toast__container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.toast {
+  width: 300px;
+  background-color: #dc3545; /* Цвет фона для ошибки */
+  color: #fff; /* Цвет текста */
+}
+
+.toastHeader {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.15
+  ); /* Прозрачный фон для заголовка */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.toastBody {
+  padding: 10px;
+}
+
+form button:hover {
+  opacity: 0.8;
+  border: 1px solid rgb(160, 160, 229);
+  color: white;
+  background: rgb(160, 160, 229);
+}
+
+@media (max-width: 391px) {
+  .main__stat {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}

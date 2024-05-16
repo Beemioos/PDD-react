@@ -1,0 +1,98 @@
+.regForm form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgb(160, 160, 229);
+  border-radius: 30px;
+  margin-top: 30px;
+}
+/* NewStatement.module.css */
+
+/* Стили для уведомления об ошибке */
+.toast__container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.toast {
+  width: 300px;
+  background-color: #dc3545; /* Цвет фона для ошибки */
+  color: #fff; /* Цвет текста */
+}
+
+.toastHeader {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.15
+  ); /* Прозрачный фон для заголовка */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.toastBody {
+  padding: 10px;
+}
+
+.regForm form div label {
+  color: #ffffff;
+}
+.titReg {
+  text-align: center;
+  font-size: 33px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.regForm form div {
+  display: flex;
+  flex-direction: column;
+}
+.regForm form div input {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.regForm form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  transition: all 0.2s linear;
+  color: #fff;
+  font-size: 20px;
+}
+.regForm form button:hover {
+  background: #ffffff;
+  color: #000;
+}
+.route {
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  transition: all 0.25s linear;
+}
+.route:hover {
+  background: #fff;
+  color: black;
+}
+
+@media (max-width: 391px) {
+  .regForm form {
+    margin-top: 10vh;
+    transform: scale(0.97);
+  }
+}
